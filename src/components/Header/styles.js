@@ -4,15 +4,15 @@ export const Container = styled.div`
   padding: 30px;
   width: 100%;
   height: 80px;
-  background-color: #fff;
   display: flex;
+  box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3);
 
-   .menu-links {
+  .menu-links {
     display: flex;
     align-items: center;
     width: 100%;
-    /* justify-content:; */
   }
+
   h1 {
     color: #E9511D;
     text-transform: uppercase;
@@ -28,16 +28,13 @@ export const Container = styled.div`
     margin: 0 30px;
   }
 
-  .link-kit {
-    color: #E9511D;
-    line-height: 40px;
-    font-size: 16px;
-  }
-
-  .link-individual {
+  .link {
     color: #656565;
-    line-height: 40px;
-    font-size: 16px;
+    font-size: 1rem;
+
+    &:hover {
+      color: #E9511D;
+    }
   }
 
   .menu-icons {
@@ -47,7 +44,18 @@ export const Container = styled.div`
   }
 
   img {
-    width: 16px;
-    height: 16px;
+    height: 27px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    margin-bottom: 50px;
+
+    .menu-links {
+
+    }
+    .link, .options {
+      display: none;
+    }
   }
 `;

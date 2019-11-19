@@ -1,22 +1,27 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Container } from './styles';
-import { Search, Cesta } from "../../assets"
+import iconSearch from '../../assets/icons/search.png'
+import iconShoping from '../../assets/icons/shopping.png'
 
 export default function Header() {
   return (
     <Container>
-      <div className="menu-links">
-        <h1>Fit<span>Food</span></h1>
-          <a className="link-kit" href="">Kits e pratos individuais</a>
-          <a className='link-individual' href="">Pratos individuais</a>
+      <div className='menu-links'>
+        <Link to='/home'>
+          <h1><span>Chef</span>FIT</h1>
+        </Link>
+        <Link className='link' to='/home'>Pratos</Link>
+        <Link className='link' to ='/restaurants'>Restaurantes</Link>
       </div>
-          <a href="#">
-            <img src={Search} alt="Buscar item"/>
-          </a>
-          <a href="#">
-            <img src={Cesta} alt="Cesta de compras"/>
-          </a>
+      
+      <div className='options'>
+        <img src={iconSearch} alt='Buscar Item'/>
+      </div>
+
+      <Link to='/cart'>
+        <img src={iconShoping} alt='Carrinho de Compras'/>
+      </Link>
     </Container>
   );
 }

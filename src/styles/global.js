@@ -2,14 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
     * {
         margin: 0;
         padding: 0;
         outline: 0;
         box-sizing: border-box;
-        font-family: Roboto, sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     body {
@@ -22,11 +22,21 @@ export default createGlobalStyle`
 
     input, button, select {
         height: 45px;
-        /* max-width: 90%; */
         border-radius: 4px;
         border: 1px solid #000;
         padding: 10px;
         margin: 7px;
+    }
+
+    input, select {
+        color: #E9511D !important;
+        border: 1px solid #c4c4c4;
+        background: #fff;
+        font-size: 1rem;
+    }
+
+    select {
+        border: 1px solid #E9511D;
     }
 
     html, body, #root {
@@ -39,6 +49,16 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+        background: #E9511D;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        transition: .2s;
+        box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3);
+
+        &:hover {
+            opacity: .7;
+        }
     }
 
 `;

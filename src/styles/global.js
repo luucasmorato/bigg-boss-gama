@@ -41,4 +41,11 @@ export default createGlobalStyle`
         cursor: pointer;
     }
 
+    ul {
+        list-style: none
+    }
+
+    a {
+        text-decoration: none
+    }
 `;

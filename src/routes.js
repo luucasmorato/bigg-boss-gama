@@ -17,7 +17,6 @@ export default function Routes() {
       <Route path="/cart" component={Cart} />
       <Route path="/product" component={Product} />
       <Route path="/restaurants" component={Restaurants} />
-
     </Switch>
   )
 }

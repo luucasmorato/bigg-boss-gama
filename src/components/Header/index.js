@@ -11,7 +11,7 @@ export default function Header() {
         <Link to='/home'>
           <h1><span>Chef</span>FIT</h1>
         </Link>
-        <Link className='link' to='/home'>Pratos</Link>
+        <Link className='link' to='/home'>Pratos individuais</Link>
         <Link className='link' to ='/restaurants'>Restaurantes</Link>
       </div>
       

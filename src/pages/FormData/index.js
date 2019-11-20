@@ -31,7 +31,6 @@ export default function FormData() {
                 <Link to="/home">
                     <button> Quero melhorar meus resultados! </button>
                 </Link>
-
             </div>
         </div>
     </Container>

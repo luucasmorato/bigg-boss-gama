@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { Container } from './styles';
 
 export default function Login() {
@@ -8,7 +7,6 @@ export default function Login() {
     <Container>
         <div className="content">
            
-
             <div className="data">
                 <h4>Para acessar, faça login com sua conta do Queima Diária:</h4>
 
@@ -23,7 +21,6 @@ export default function Login() {
                 <a href="https://www.queimadiaria.com/">
                     Cadastre-se
                 </a>
-
             </div>
         </div>
     </Container>

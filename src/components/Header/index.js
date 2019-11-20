@@ -19,7 +19,7 @@ export default function Header() {
         <img src={iconSearch} alt='Buscar Item'/>
       </div>
 
-      <Link to='/cart'>
+      <Link to='/product-resume'>
         <img src={iconShoping} alt='Carrinho de Compras'/>
       </Link>
     </Container>

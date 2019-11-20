@@ -32,7 +32,9 @@ export default function Home() {
                 <p>110 g</p>
                 <p>R$ 17,90</p>
               </div>
-              <button>Adicionar</button>
+              <Link to='/product-resume'>
+                <button>Adicionar</button>
+              </Link>
             </div>
             
             <div className="item">
@@ -44,7 +46,9 @@ export default function Home() {
                 <p>110 g</p>
                 <p>R$ 17,90</p>
               </div>
-              <button>Adicionar</button>
+              <Link to='/product-resume'>
+                <button>Adicionar</button>
+              </Link>
             </div>
 
             <div className="item">
@@ -56,7 +60,9 @@ export default function Home() {
                 <p>R$ 17,90</p>
                 <p>110 g</p>
               </div>
-              <button>Adicionar</button>
+              <Link to='/product-resume'>
+                <button>Adicionar</button>
+              </Link>
             </div>
 
             <div className="item">
@@ -68,7 +74,9 @@ export default function Home() {
                 <p>110 g</p>
                 <p>R$ 17,90</p>
               </div>
-              <button>Adicionar</button>
+              <Link to='/product-resume'>
+                <button>Adicionar</button>
+              </Link>
             </div>
             
           </div>

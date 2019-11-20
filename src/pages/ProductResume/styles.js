@@ -12,6 +12,14 @@ export const Container = styled.div`
     flex-direction: column;
     margin: 65px 0 0 50px;
   }
+
+  .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #E9511D;
+    margin-bottom:30px
+  }
   .content-resume {
     display: flex;
     flex-direction: column;
@@ -27,8 +35,8 @@ export const Container = styled.div`
   .buy-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 50px;
+    justify-content: flex-end;
+    margin-top: 30px;
   }
   .quantity-item {
     border: 1px solid #ccc;
@@ -43,6 +51,97 @@ export const Container = styled.div`
     color: #656565;
     font-size: 16px;
   }
+  .price h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #E9511D;
+  }
+  .price p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #656565;
+  }
+  .price {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .freight {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .freight h1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #656565;
+  }
+  .freight p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #656565;
+  }
+  .card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    margin-top: 50px;
+    margin-right:10px;
+    justify-content: center
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+  }
+  .time span {
+    margin: 0 0 0 15px;
+    color: #656565;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:20px;
+  }
+  .location span {
+    margin: 0 0 0 15px;
+    color: #656565;
+  }
+  .location img {
+    margin: 0 -8px 0 -8px;
+  }
+  .content-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-card p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #656565;
+  }
+  .content-card p:last-child {
+    color: #E9511D;
+  }
 
   button {
     width: 50px;
@@ -50,13 +149,17 @@ export const Container = styled.div`
     color: #000;
     font-size: 16px
   }
-
-  span {
-    margin-top: 20px;
-    color: #E9511D;
-    font-size: 1.3rem;
+  button.btn-finish {
+    border-radius: 5px;
+    background-color: #E9511D;
+    width: 200px;
+    height: 40px;
+    margin: 35px 0 0 0;
+    color: #fff;
     font-weight: bold;
+    font-size: 1rem;
   }
+
   @media (max-width: 600px){
     width:100%;
     display: flex;
@@ -71,6 +174,26 @@ export const Container = styled.div`
       width: 100%;
       margin: 0
     }
+    .content h1 {
+      text-align: center;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items:center
+    }
+    .time img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .location img {
+      width: 20px;
+      height: 20px;
+      margin: 0
+    }
+
     img {
       width: 100%;
       height:250px;
@@ -88,7 +211,7 @@ export const Container = styled.div`
       margin: 0 10px
     }
     .content-resume h2 {
-      text-align: center;
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
     line-height: 40px;

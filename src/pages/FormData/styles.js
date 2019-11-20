@@ -12,33 +12,45 @@ export const Container = styled.div`
 
     div.content {
         height: 85%;
-        width: 50%;
+        width: 85%;
         display: flex;
 
+        div.intro {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h2 {
+                color: #E9511D;
+            }
+            p {
+                color: #585858;
+            }
+
+            h1, h2, p {
+                max-width: 90%;
+                padding: 8px;
+                b {
+                    color: #E9511D;
+                }
+            }
+        }
+
         div.data {
-            width: 100%;
+            width: 50%;
             border-radius: 6px;
             box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3);
+            background: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding-top: 50px;
-
-            a {
-                margin-top: 5px;
-                color: #E9511D;
-                font-size: 1.3rem;
-            }
             
-            h4, input {
-                width: 63%;
+            h4, input, select {
+                width: 80%;
                 color: #656565;
-            }
-
-            button {
-                min-width: 250px;
             }
 
             form {
@@ -47,6 +59,7 @@ export const Container = styled.div`
                 align-items: center;
                 width: 100%;
                 margin: 40px 0;
+
             }
         }
     }
@@ -55,34 +68,28 @@ export const Container = styled.div`
         font-size: 1.1rem;
 
         div.content{
-            width: 90%;
-            height: 95%;
+            flex-direction: column;
+            
+            div.intro {
+                width: 100%;
+            }
 
             div.data {
                 width: 100%;
-                padding-top: 0;
-
-                a {
-                    font-size: 1rem;
-                }
+                margin: 20px 0;
+                padding: 15px 0;
 
                 h4 {
                     font-size: 1.2rem;
                     padding: 5px 0;
                 }
 
-                h4, input {
-                    width: 85%;
-                }
-
                 form {
-                    margin: 35px 0;
-                }
-
-                button {
-                    width: 80%; 
+                    margin: 0;
                 }
             }
+
         }
     }
+
 `;

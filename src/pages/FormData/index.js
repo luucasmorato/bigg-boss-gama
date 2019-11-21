@@ -17,8 +17,6 @@ export default function FormData() {
                 <h4>Para receber o seu plano de dieta personalisado, basta preencher o formulário abaixo:</h4>
 
                 <form>
-                    <input type="text" placeholder="Nome"/>
-                    <input type="text" placeholder="E-mail"/>
                     <input type="text" placeholder="Idade"/>
                     <input type="text" placeholder="Peso"/>
                     <input type="text" placeholder="Altura"/>

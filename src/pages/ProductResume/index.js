@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from './styles';
 import Header from '../../components/Header';
 import BgCremeAbobora from "../../assets/images/creme-abobora-large.png"
@@ -52,7 +53,9 @@ export default function ProductResume() {
                 <p>R$ 13,90</p>
               </div>
               <div>
-                <button className="btn-finish">Finalizar pedido</button>
+                <Link to="/follow-order">
+                  <button className="btn-finish">Finalizar pedido</button>
+                </Link>
               </div>
             </div>
           </div>

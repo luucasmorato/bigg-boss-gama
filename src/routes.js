@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Product from './pages/Product';
 import Restaurants from './pages/Restaurants';
 import ProductResume from './pages/ProductResume';
+import FollowOrder from './pages/FollowOrder';
 
 export default function Routes() {
   return (
@@ -17,6 +18,7 @@ export default function Routes() {
       <Route path="/product" component={Product} />
       <Route path="/product-resume" component={ProductResume} />
       <Route path="/restaurants" component={Restaurants} />
+      <Route path="/follow-order" component={FollowOrder} />
     </Switch>
   )
 }

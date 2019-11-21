@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container } from './styles';
 import Header from '../../components/Header';
-import imgCremeAbobora from '../../assets/images/creme-abobora.png';
 import { Link } from 'react-router-dom';
+import imgCremeAbobora from '../../assets/images/creme-abobora.png';
+import imgLasanha from '../../assets/images/lasanha-de-frango-fit.png';
+import imgSalmao from '../../assets/images/salmao-com-aspargos.png';
 
 export default function Home() {
 
@@ -41,7 +43,7 @@ export default function Home() {
               <Link to='/product'>
                 <img src={imgCremeAbobora} alt="imagem card"/>
               </Link>
-              <span>Creme de moranga</span>
+              <span>Salada de banana e chia</span>
               <div className="price">
                 <p>110 g</p>
                 <p>R$ 17,90</p>
@@ -53,9 +55,9 @@ export default function Home() {
 
             <div className="item">
               <Link to='/product'>
-                <img src={imgCremeAbobora} alt="imagem card"/>                
+                <img src={imgLasanha} alt="imagem card"/>                
               </Link>
-              <span>Creme de moranga</span>
+              <span>Lasanha de frango fit</span>
               <div className="price">
                 <p>R$ 17,90</p>
                 <p>110 g</p>
@@ -67,9 +69,9 @@ export default function Home() {
 
             <div className="item">
               <Link to='/product'>
-                <img src={imgCremeAbobora} alt="imagem card"/>
+                <img src={imgSalmao} alt="imagem card"/>
               </Link>
-              <span>Creme de moranga</span>
+              <span>Salmão com aspargos</span>
               <div className="price">
                 <p>110 g</p>
                 <p>R$ 17,90</p>
